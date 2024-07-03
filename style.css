@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: roboto;
+  background-color: whitesmoke;
+}
+
+/* FOr the smooth scrolling when a nav element is clicked */
+html {
+  scroll-behavior: smooth;
+}
+
+#user {
+  margin: 50px auto;
+  width: 300px;
+}
+
+.backgroundBallA {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+  background-color: limegreen;
+  border-radius: 50%;
+}
+
+.backgroundBallB {
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  z-index: -2;
+  opacity: 0.9;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 5px 0 20px lightgray;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 24px;
+}
+h3 {
+  color: limegreen;
+  text-align: center;
+  font-weight: 600;
+}
+
+main {
+  background-color: white; 
+  border-radius: 0.6rem;
+  box-shadow: 1px 0 30px grey;
+}
+
+.sectionTitle {
+  font-size: 23px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+main p {
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: gray;
+}
+
+#skills {
+  display: grid;
+  gap: 40px;
+  justify-content: center;
+}
+
+#skills img {
+  padding: 30px;
+  border-radius: 0.9rem;
+  box-shadow: 2px 0 5px lightgray;
+}
+
+
+/* Design for mobile */
+@media (max-width: 380px){
+    nav{
+        display: none;
+    }
+    .backgroundBallA{
+        width: 400px;
+        height: 500px;
+        left: -300px;
+        top: 700px;
+    }
+    .backgroundBallB{
+        width: 400px;
+        height: 200px;
+        top: -100px;
+        right:0;
+    }
+    main{
+        width: 90%;
+        margin: 70px auto;
+        padding: 20px 15px;
+    }
+    #skills{
+        grid-template-columns: repeat(2, 140px);
+    }
+    footer{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 70px;
+        padding: 30px 10px;
+    }
+}
+
+
+/* Design for Tablet and Laptops */
+@media (min-width: 1024px),(max-width: 768px){
+    nav {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        justify-content: end;
+        justify-items: center;
+        padding: 15px;
+        gap: 15px;
+      }  
+    nav a {
+        text-decoration: none;
+    }
+    nav li {
+        list-style-type: none;
+        font-size: 17px;
+        color: limegreen;
+        font-weight: 600;
+        padding: 10px 20px;
+        border-radius: 0.5rem;
+    }
+    nav li:hover {
+        background-color: limegreen;
+        color: white;
+    }
+    .backgroundBallA {
+        width: 700px;
+        height: 700px;
+        left: -300px;
+    }
+    .backgroundBallB{
+        width: 700px;
+        height: 700px;
+        top: -400px;
+        right: 0;
+    }
+    main{
+        width: 50%;
+        margin: 100px auto;
+        padding: 15px 30px;
+    }
+    #skills{
+          grid-template-columns: repeat(4, 150px);
+    }
+    footer{
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 200px;
+        padding: 30px;
+    }
+  
+}
+
+
+@media (max-width: 768px){
+    main{
+        width: 80%;
+    }
+}
+
+footer {
+  display: grid;
+  background-color:white; 
+}
+
+footer p {
+  letter-spacing: 1px;
+  margin: 8px;
+  font-size: 14px;
+}
+
+footer a{
+    font-weight: 500;
+    color: blue;
+}
+footer a:hover{
+    font-weight: 800;
+    color: limegreen;
+    cursor: pointer;
+}
+
+.leftSection .icons {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 10px 0;
+  color: limegreen;
+}
+
+.contactDetails{
+    margin-top: 20px;
+}
+
+.mainFooeterHeader{
+    font-size: 24px;
+}
