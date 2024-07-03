@@ -113,7 +113,7 @@ main p {
 
 
 /* Design for Tablet and Laptops */
-@media (min-width: 1024px),(max-width: 768px){
+@media (min-width: 1024px),(min-width: 768px){
     nav {
         display: grid;
         grid-template-columns: repeat(3, 100px);
